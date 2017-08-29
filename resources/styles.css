@@ -1,0 +1,148 @@
+body{
+background-color:#CCC8D8;
+font-family: 'Source Sans Pro', sans-serif;
+}
+#nav{
+width:100%;
+}
+#nav ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+	top:0;
+    overflow: hidden;
+    background-color:#333;
+	z-index:100;
+	font-family:Arial;
+	text-transform:uppercase;
+}
+#nav li {
+    float: left;
+	border-right:2px #820B26 solid;
+	padding-left:1%;
+	padding-right:1%;
+	}
+#nav li:last-child{
+	border-right:none;
+    float:right;
+	background-color:#111;
+	}
+#nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+#nav li a:hover {
+    background-color: #111;
+}
+#nav .active{
+	background-color:#B84E37;
+}
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #19c589;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+.show-menu:hover{
+	background-color:#111;
+	
+}
+input[type=checkbox]{
+    display: none;
+}
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+	
+}
+body #main{
+color:#000;
+margin:0 auto;
+width: 90%;
+
+background-color:#FFF;
+background-size:100% 100%;
+padding:10;
+font-family: 'Source Sans Pro', sans-serif;
+}
+h1{
+font-weight:bold;
+font-size:40px;
+color:Black;
+}
+ul{
+   margin-right:10px;
+   margin-left:10px;
+}
+}
+a:link,a:visited{
+color:#4789EB;
+}
+a:hover{
+color:aqua;
+}
+a:active{
+color:#6600CC;
+}
+img{
+border:3px groove black;
+}
+hr{
+width:98%;
+border-color:purple;
+border: 2px groove purple;
+}
+#button {
+  display: none;
+  position: fixed;
+  border:red;
+  bottom: 30px;
+  right: 50px;
+  z-index: 101;
+  outline: none;
+  background-color: #6600CC;
+  color: white;
+  cursor:pointer;
+  border-radius: 15px;
+  padding: 10px;
+  
+}
+
+#button:hover {
+  background-color: #008000	;
+}
+ #footer{
+background-color:#AA9ECF;
+}
+
+@media screen and (max-width : 910px){
+    .topnav ul {
+        position: static;
+        display: none;
+    }
+    .topnav li {
+        margin-bottom: 1px;
+    }
+    .topnav ul li, li a {
+        width: 100%;
+    }
+    .show-menu {
+        display:block;
+		cursor: pointer;
+		cursor: hand;
+    }
+	#nav li:last-child{
+	background-color:#111;
+	width:100%;
+	}
+    .blogimage{
+		width:100%;
+  }
+}
+
